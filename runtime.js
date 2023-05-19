@@ -61,7 +61,7 @@ console.log('Results for the extraLargeArray');
 console.log("insert", resultsInsert.preciseWords);
 console.log("append", resultsAppend.preciseWords);
 
-
+//RUNTIME O(N)
 function addToZero(arr){
     let itDoes = false;
     arr.forEach(element => {
@@ -83,6 +83,7 @@ addToZero([1, 2, 3]);
 addToZero([1, 2, 3, -2]);
 // -> True
 
+//RUNTIME O(1)
 function hasUniqueChars(str){
     let strArr = str.split("")
     strSet = new Set (strArr)
@@ -99,6 +100,7 @@ hasUniqueChars("Monday");
 hasUniqueChars("Moonday");
 // -> False
 
+//RUNTIME O(N)
 function isPangram(str){
     let itDoes = true;
     let alphabet = [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
@@ -121,6 +123,7 @@ isPangram("The quick brown fox jumps over the lazy dog!");
 isPangram("I like cats, but not mice");
 // -> False
 
+//RUNTIME O(N)
 function findLongestWord(arr){
     let max = 0
     arr.forEach(element => {
